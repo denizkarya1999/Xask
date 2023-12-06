@@ -1,0 +1,23 @@
+Project 4 Notes
+###################################################
+Subject: Task Manager 
+Description: This web application will help people to manage their daily tasks. 
+
+Functional Requirements:          
+1- The user will be able to create, read, update and delete daily tasks.
+2- The user will be able to assign difficulty level for each task as "Hard", "Medium" and "Easy".
+3- The user will also be able to categorize their tasks as "Completed", "Planned" and "Backlogged".
+4- The user will have an option to assign tasks to other users and groups.
+5- The user will have a productivity score based on the speed of their task completion on percentage basis (Ex. 10 points increase for completing 2 hard tasks at the same day.)
+6- The user will have motivational quotes on their screen from important people such as Steve Jobs to be more productive.
+7- The user will have their own account.
+8- Tasks shall consist of: Name, Description, Difficulty Level, Completion Status, UserID and GroupID.
+9- The user account shall consist of: First Name, Last Name, Email, Password, Tasks, Groups and Productivity Score.
+10- Groups shall consist of Group Name, Tasks, Users and The Group Productivity Score.
+
+Non-Functional Requirements:
+1- The application must be able to run Chrome, Safari and Firefox browsers.
+2- In case the user makes mistakes, the users will see an animated messagebox instead of Javascript pop-up.
+3- The front-end and back-end requirements must satisfy with the assign requirements. 
+
+Estimated time to complete project: 2 days if requirements are negotiated, otherwise one week if everyone makes equal contribution.
