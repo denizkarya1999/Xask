@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Task Management</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+
+    <div class="form-container" id="signin-form">
+        <h2><strong>Sign In</strong></h2>
+
+        <!--Is set to hidden normally. Set overflow: to visible when sign in failed-->
+        <p class="additional-text"><strong>Username or password is not correct.</strong></p> 
+        
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit"><strong>Sign In</strong></button>
+
+        <a href="#" class="sign-up-link" onclick="openSignUpForm()"><strong>Sign Up</strong></a>
+    </div>
+
+    <div class="form-container" id="signup-form" style="display: none;">
+        <h2><strong>Sign Up</strong></h2>
+
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        <input type="email" id="signupEmail" name="signupEmail" placeholder="Enter your email" required>
+        <input type="password" id="signupPassword" name="signupPassword" placeholder="Enter your password" required>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+
+        <button type="submit"><strong>Sign Up</strong></button>
+    </div>
+
+    <script src="signin.js"></script>
+</body>
+</html>
