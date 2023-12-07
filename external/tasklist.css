@@ -1,0 +1,17 @@
+body{
+    background-color: #144A71;
+}
+.assign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    background-color: white;
+}
+nav{
+    display: flex;
+    clear: both;
+    background-color: black;
+}
+/* Rectangle 5 */
