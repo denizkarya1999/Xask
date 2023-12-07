@@ -1,17 +1,53 @@
 body{
     background-color: #144A71;
 }
-.assign{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 header{
     background-color: white;
 }
+/*Navigation menu*/
 nav{
     display: flex;
     clear: both;
     background-color: black;
 }
-/* Rectangle 5 */
+/*tasklist whole*/
+
+/*buttons divs*/
+.difficultyButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+}
+.statusButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+/*List view*/
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    max-height: 200px; /* Set the maximum height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrollbar if content exceeds the height */
+    border: 1px solid #ddd; /* Optional border for the scrollable area */
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none; /* Remove border from the last list item */
+}
+/*assign*/
+.assign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
