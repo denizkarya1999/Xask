@@ -1,69 +1,44 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-  }
-  
-  .form-container {
+    background-color: #144A71;
+    text-align: center;
+    margin: 50px;
+}
+.form-container {
+    max-width: 400px;
+    margin: 20px auto 0;
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  h2 {
-    margin-bottom: 20px;
-  }
-  
-  input[type='email'],
-  input[type='password'],
-  input[type='text'] {
+}
+input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
     border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #fff;
+    border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  .sign-up-link {
-    display: block;
+}
+button:hover {
+    background-color: #45a049;
+}
+.sign-up-link {
     margin-top: 10px;
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  .sign-up-link:hover {
-    text-decoration: underline;
-  }
-  
-  .additional-text {
-    display: none;
-    color: red;
-    margin-bottom: 10px;
-  }
-  
-  /* Show additional text when needed */
-  .show-additional-text .additional-text {
     display: block;
-  }
+    text-decoration: underline;
+    color: #144A71;
+    cursor: pointer;
+}
+.additional-text { 
+    margin-bottom: 20px; 
+    height: 0; 
+    overflow: hidden; 
+    color: red; 
+}
