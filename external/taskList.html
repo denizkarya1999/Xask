@@ -9,55 +9,75 @@
 </head>
 
 <body>
+
     <header>
         <h1>Task List | add Task </h1>
         <nav class = "nav">
             <button>nav</button>
             <button>add task</button>
         </nav>
-    <!-- main content-->
     </header>
     <main>
-        <div class="taskListFunctions">
-            <!--enter task -->
-            <input type="text" id = "task" placeholder="Todo">
-            <!-- listview?-->
-            <ul>
-                <li>test item</li>
-                <li>test item</li>
-                <li>test item</li>
-                <li>test item</li>
-                <li>test item</li>
-                <li>test item</li>
-                <li>test item</li>
-                <li>test item</li>
-                <li>test item</li>
-                <li>test item</li>
-                <li>test item</li>
-            </ul>
-            <!--dropdown selects menu -->
-            <select class="assign">
-                <option id = "assignList" placeholder="placeholder">edit?</option>
-                <option id = "assignList" placeholder="placeholder">add?</option>
-                <option id = "assignList" placeholder="placeholder">delete?</option>
-            </select>
-            <!--two button groups, buttons in each group are mutally exclusive-->
-            <div class = "difficultyButtons">
-                <button>easy</button>
-                <button>medium</button>
-                <button>hard</button>
-            </div>
-            <div class = "statusButtons">
-                <button>completed</button>
-                <button>planned</button>
-                <button>backlogged</button>
-            </div>
+    <div class="taskListFunctions">
+        <!--enter task -->
+        <input type="text" id = "task" placeholder="Todo">
+        <!-- listview?-->
+        <ul>
+            <li>test item</li>
+            <li>test item</li>
+            <li>test item</li>
+            <li>test item</li>
+            <li>test item</li>
+            <li>test item</li>
+            <li>test item</li>
+            <li>test item</li>
+            <li>test item</li>
+            <li>test item</li>
+            <li>test item</li>
+        </ul>
+        <!--dropdown selects menu -->
+        <select class="assign">
+            <option id = "assignList" placeholder="placeholder"></option>
+        </select>
+        <!--two button groups, buttons in each group are mutally exclusive-->
+        <div class = "difficultyButtons">
+            <form>
+                <label>
+                    <input type="radio" name="difficulty" value="easy"> easy
+                </label>
+            
+                <label>
+                    <input type="radio" name="difficulty" value="medium"> medium
+                </label>
+            
+                <label>
+                    <input type="radio" name="difficulty" value="hard"> hard
+                </label>
+            </form>
+            
         </div>
+        <div class = "statusButtons">
+            <form>
+                <label>
+                    <input type="radio" name="status" value="inprogress"> in-progress
+                </label>
+            
+                <label>
+                    <input type="radio" name="status" value="completed"> completed
+                </label>
+            
+                <label>
+                    <input type="radio" name="status" value="backlogged"> backlogged
+                </label>
+            </form>
+            
+        </div>
+    </div>
     </main>
-<!--credits-->
     <footer>
-        <p>&copy; XASK by CIS 435 Project 4 team.</p>
+        <p>&copy; CIS 435 Project 4 team.</p>
     </footer>
+
 </body>
 
 </html>
