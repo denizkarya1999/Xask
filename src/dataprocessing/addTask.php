@@ -6,6 +6,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["addTask"])) {
     // Perform any server-side processing here
     // For demonstration purposes, we'll just echo the input
     echo "Data submitted: " . htmlspecialchars($description);
+      header("Location: taskList.html");
+    exit(); // Make sure to stop script execution after the redirect
+   
 } else {
     // Handle invalid request method or button not clicked
     echo "Invalid request or button not clicked";
