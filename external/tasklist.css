@@ -12,17 +12,22 @@ nav{
     background-color: black;
 }
 /*tasklist whole*/
-
+button{
+    display: flex;
+    margin-right: 10px;
+}
 /*buttons divs*/
 .difficultyButtons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     background-color: aquamarine;
 }
 .statusButtons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     background-color: white;
 }
@@ -40,6 +45,9 @@ ul {
 li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
+}
+li:hover{
+    background-color: rgba(86, 179, 255, 0.651);
 }
 
 li:last-child {
