@@ -40,14 +40,34 @@
         </select>
         <!--two button groups, buttons in each group are mutally exclusive-->
         <div class = "difficultyButtons">
-            <button>easy</button>
-            <button>medium</button>
-            <button>hard</button>
+            <form>
+                <label>
+                    <input type="radio" name="difficulty" value="east"> easy
+                </label>
+            
+                <label>
+                    <input type="radio" name="difficulty" value="medium">medium
+                </label>
+            
+                <label>
+                    <input type="radio" name="difficulty" value="hard"> hard
+                </label>
+            </form>
         </div>
         <div class = "statusButtons">
-            <button>completed</button>
-            <button>planned</button>
-            <button>backlogged</button>
+            <form>
+                <label>
+                    <input type="radio" name="status" value="planned"> planned
+                </label>
+            
+                <label>
+                    <input type="radio" name="status" value="completed"> completed
+                </label>
+            
+                <label>
+                    <input type="radio" name="status" value="backlogged"> backlogged
+                </label>
+            </form>
         </div>
     </div>
 
