@@ -41,7 +41,9 @@ li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
-
+li:hover{
+    background-color: rgb(132, 119, 250);
+}
 li:last-child {
     border-bottom: none; /* Remove border from the last list item */
 }
