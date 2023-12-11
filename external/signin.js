@@ -12,31 +12,32 @@ const signInError = document.querySelector('.additional-text');
 async function signIn() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-
-    fetch(`http://localhost:8080/projects/Tasks/UserAccountAPI?email=${email}&password=${password}`, {
-        mode: 'no-cors',
-        method: 'GET',
-        headers: {
-        'Content-Type': 'application/json',
-    },
-})
-    .then(response => {
-        // Check if the request was successful
-        if (!response.ok) {
-            throw new Error('Network response was not ok.');
-        }
-        // Parse JSON data from the response
-        return response.json();
-    })
-    .then(data => {
-        // Handle the JSON data
-        console.log(data);
-    })
-    .catch(error => {
-        // Handle errors
-        console.error('There was a problem with the fetch operation:', error);
-    });
-}
+    try{
+        //http://localhost:8080/projects/Tasks/UserAccountAPI?email=${email}&password=${password}
+        //https://jsonplaceholder.typicode.com/users
+        console.log('looking for response')
+        fetch('http://localhost:8080/projects/Tasks/UserAccountAPI/',{
+            mode:'no-cors',
+            method:'Get',
+            headers:{
+                'Content-Type' : 'application/json',
+            },
+        })
+        .then(response=> {
+            if(!response.ok){
+                console.log('problem');
+                return;
+            }
+            return response.json();
+        }).then(data => {
+            console.log(data.email);
+        });
+    }
+    catch(error){
+    console.log(error);
+    }
+    window.location.href = 'http://localhost:8080/projects/external/tasklist.html';
+}//end signIn()
 
 // Event listener for form submission
 signInForm.addEventListener('submit', (event) => {
