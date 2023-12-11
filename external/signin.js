@@ -13,20 +13,29 @@ async function signIn() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    try {
-        await fetch(`http://localhost:8080/projects/Tasks/UserAccountAPI?email=${email}&password=${password}`, {
-            mode: 'no-cors',
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
-        console.log('Sign in success');
-        // Perform actions after successful sign-in
-    } catch (error) {
-        console.error('Error signing in:', error);
-        // Handle error during sign-in process
-    }
+    fetch(`http://localhost:8080/projects/Tasks/UserAccountAPI?email=${email}&password=${password}`, {
+        mode: 'no-cors',
+        method: 'GET',
+        headers: {
+        'Content-Type': 'application/json',
+    },
+})
+    .then(response => {
+        // Check if the request was successful
+        if (!response.ok) {
+            throw new Error('Network response was not ok.');
+        }
+        // Parse JSON data from the response
+        return response.json();
+    })
+    .then(data => {
+        // Handle the JSON data
+        console.log(data);
+    })
+    .catch(error => {
+        // Handle errors
+        console.error('There was a problem with the fetch operation:', error);
+    });
 }
 
 // Event listener for form submission
